@@ -1,0 +1,2 @@
+<?php
+// erreur.php : controller

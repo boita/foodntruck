@@ -1,0 +1,579 @@
+/***********Global***************/
+
+body
+{
+	background-color: white;
+	overflow-y: visible;
+}
+
+#interface_profil
+{
+	width: 1024px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#interface_profil .titre_bloc
+{
+	margin: 0 auto;
+	color: #FE434C;
+	border-bottom: 2px solid #FE434C;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	font-size: 1.3em;
+	width: 95%;
+}
+
+#interface_profil ul li
+{
+	list-style-type: none;
+}
+
+#interface_profil .bloc_profil
+{
+	margin-bottom: 15px;
+}
+
+.add_btn
+{
+	background-color: #FF434C;
+	color: white;
+	padding: 7px;
+	font-size: 1em;
+	width: auto;
+	border: none;
+	border-bottom: 2px solid #E73D45;
+	cursor: pointer;
+	border-radius: 7px;
+	-ms-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	text-decoration: none;
+}
+
+.advice
+{
+	text-align: center;
+	font-size: 1.2em;
+}
+
+/*************************Left**************************/
+
+#bloc_left
+{
+	float: left;
+	width: 200px;
+	background-color: #ff1c27;
+}
+
+#bloc_left #photo_profil
+{
+	width: 200px;
+	border-bottom: 4px solid #6ACEEB;
+	display: block;
+}
+
+#social_bloc img
+{
+	width: 20px;
+}
+
+#about_me
+{
+	background-color: #FF434C;
+	padding: 15px;
+	position: relative;
+}
+
+#about_me p
+{
+	color: white;
+}
+
+#about_me .first_name
+{
+	font-size: 1.6em;
+}
+
+#about_me .last_name
+{
+	font-size: 1.6em;
+	text-transform: uppercase;
+}
+
+#about_me .birth, #about_me .mail
+{
+	font-size: 1em;
+}
+
+#social_bloc
+{
+	text-align: center;
+	margin: 15px 0px 0px 0px;
+}
+
+#bloc_change_info
+{
+	text-align: center;
+	margin: 25px 0px 15px 0px;
+}
+
+#change_info
+{
+	border: 2px solid #6ACEEB;
+	background-color: none;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+
+#modele_me
+{
+	display: none;
+}
+
+#change_info_me
+{	
+	text-align: center;
+	display: none;
+	position: relative;
+	margin-top: 10px;
+}
+
+.inp_fname, .inp_lname, .inp_birth, .inp_mail, .inp_pass
+{
+	border: none;
+	padding: 5px;
+	display: block;
+	border-radius: 5px;
+	-ms-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: black;
+}
+
+#subm_change_me
+{
+	border: 2px solid #6ACEEB;
+	background-color: rgba(0,0,0,0);
+	padding: 5px 15px;
+	cursor: pointer;
+	border-radius: none;
+	color: white;
+	margin-top: 15px;
+}
+
+#close_change_me
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: #6ACEEB;
+	padding: 0px 8px 3px 8px;
+	display: none;
+	cursor: pointer;
+}
+
+/*************************Right:************************/
+
+#interface_profil #bloc_right
+{
+	width: 800px;
+	float: right;
+}
+
+/*************Adresses****************/
+
+#adresses
+{
+	position: relative;
+}
+
+#adresses .suppr, #adresses .modif
+{
+	cursor: pointer;
+}
+
+#interface_profil .bloc_adresse
+{
+	float: left;
+	width: 350px;
+	margin: 5px 5px;
+	background-color: #f0f2f5;
+	padding: 10px 20px; 
+}
+
+#adresses .adresse
+{
+	float: left;
+}
+
+#adresses .manage_adresse
+{
+	float: right;
+}
+
+#adresses .bloc_add_addresse 
+{
+	background-color: white;
+	height: 38px;
+	text-align: center;
+}
+
+#all_addresses
+{
+	position: relative;
+}
+
+#bloc_add_address
+{
+	background-color: #FF434C;
+	margin: 5px 5px;
+	padding: 10px;
+	display: none;
+}
+
+#form_add_address
+{
+	margin: 0 auto;
+	width: 600px;
+	text-align: center;
+}
+
+#adresse, #zipcode
+{
+	padding: 5px;
+	border-radius: 7px;
+	-ms-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	margin: 0px 5px;
+	color: #9C9C9C;
+	border: none;
+}
+
+#form_add_address
+{
+	color: white;
+}
+
+#subm_adresse
+{
+	float: right;
+	position: relative;
+	right: 50px;
+	top: 1px;
+}
+
+#add_new_address
+{
+	position: absolute;
+	right: -25px;
+	top: 102px;
+	cursor: pointer;
+}
+
+.change_adresse
+{
+	display: none;
+}
+
+/**************Gouts*************/
+
+#gouts 
+{
+	position: relative;
+}
+
+#gouts ul li
+{
+	float: left;
+	margin: 0px 10px;
+}
+
+#gouts ul li span
+{
+	position: relative;
+	bottom: 6px;
+}
+
+#add_gout
+{
+	cursor: pointer;
+}
+
+#add_new_taste
+{
+	position: absolute;
+	top: 47px;
+	right: -25px;
+	cursor: pointer;
+}
+
+#pop_up_taste
+{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 10;
+}
+
+#content_taste
+{
+	width: 500px;
+	margin: 0 auto;
+	background-color: white;
+	position: relative;
+	top: 65px;
+}
+
+#content_taste .header_pop
+{
+	background-color: #ff434c;
+	position: relative; 
+}
+
+#content_taste .title_pop
+{
+	color: white;
+	text-transform: uppercase;
+	padding: 15px;
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+}
+
+#content_taste #close_pop_taste
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: #6ACEEB;
+	padding: 4px 8px 5px 9px;
+	font-weight: bold;
+	cursor: pointer;
+	color: white;
+}
+
+#content_taste #all_tastes_pop li
+{
+	list-style-type: none;
+	float: left;
+	display: block;
+	margin: 5px 10px;
+	width: 105px;
+	text-align: center;
+}
+
+#content_taste #all_tastes_pop li label
+{
+	width: 100%;
+	display: block;
+	padding: 5px 0px;
+	cursor: pointer;
+	color: #FF343C;
+}
+
+#content_taste #all_tastes_pop li label:hover
+{
+	background-color: #FF434C;
+	color: white;
+	transition: all ease-in-out 0.2s;
+	-webkit-transition: all ease-in-out 0.2s;
+	-moz-transition: all ease-in-out 0.2s;
+	-ms-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+}
+
+#content_taste #all_tastes_pop li label:hover .selected_taste
+{
+	background-color: #6ACEEB;
+	color: white;
+}
+
+#content_taste #all_tastes_pop .selected_taste
+{
+	background-color: #6ACEEB;
+	color: white;
+}
+
+#content_taste #all_tastes_pop li input
+{
+	display: none;
+}
+
+#pop_taste_settings
+{
+	text-align: center;
+	padding: 5px 0px 10px 0px;
+	border-top: 2px solid #6ACEEB;
+	margin-top: 10px;
+	border-bottom: 7px solid #6ACEEB;
+}
+
+#pop_taste_settings input
+{
+	display: inline-block;
+	background-color: #6ACEEB;
+	color: white;
+	padding: 7px;
+	font-size: 1em;
+	margin-top: 5px;
+	border: none;
+	border-bottom: 2px solid #00B6EB;
+	cursor: pointer;
+	border-radius: 7px;
+	-ms-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+}
+
+/***********Favorites truck**************/
+
+#favorites
+{
+	position: relative;
+}
+
+#favorites .bloc_fav_truck
+{
+	float: left;
+	width: 350px;
+	margin: 5px 5px;
+	background-color: #f0f2f5;
+	padding: 10px 20px; 
+}
+
+#favorites .logo_truck
+{
+	float: left;
+}
+
+#favorites .about_truck
+{
+	float: left;
+	margin-left: 5px;
+}
+
+#favorites .about_truck .name_truck
+{
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+#favorites .about_truck .link_site
+{
+	padding-left: 20px;
+	background: url('../img/profil/lien.png') no-repeat left;
+	font-size: 0.8em;
+	color: black; 
+	text-decoration: none;
+}
+
+#favorites .share
+{
+	float: right;
+}
+
+#add_new_fav_truck
+{
+	position: absolute;
+	top: 110px;
+	right: -25px;
+	cursor: pointer;
+}
+
+/*************Historique****************/
+#histor .bloc_commande
+{
+	float: left;
+	width: 350px;
+	margin: 5px 5px;
+	background-color: #f0f2f5;
+	padding: 10px 20px; 
+}
+
+#histor .logo_truck
+{
+	float: left;
+}
+
+#histor .about_truck
+{
+	float: left;
+	margin-left: 5px;
+}
+
+#histor .about_truck .name_truck
+{
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+#histor .recap
+{
+	float: right;
+	background-color: #FF434C;
+	color: white;
+	padding: 7px;
+	font-size: 1em;
+	margin-top: 5px;
+	border: none;
+	border-bottom: 2px solid #E73D45;
+	cursor: pointer;
+	border-radius: 7px;
+	-ms-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-o-border-radius: 7px;
+	text-decoration: none;
+}
+
+#histor .etat_commande
+{
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+#histor .en_cours
+{
+	font-style: italic;
+	font-weight: normal;
+	font-size: 0.9em;
+}
+
+#recap
+{
+	clear: both;
+	background-color: #FF434C;
+	margin: 10px 5px 5px 5px;
+	padding: 10px;
+}
+
+#content_recap
+{
+	width: 600px;
+	margin: 0 auto;
+	color: white;
+}
+
+#recap ul li p
+{
+	float: left;
+}
+
+#recap .elmt_recap
+{
+	float: left;
+}
+
+
+
+
+
+
+
+

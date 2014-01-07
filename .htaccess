@@ -1,0 +1,27 @@
+Options -Indexes
+SetEnv PHP_VER 5
+SetEnv MAGIC_QUOTES 0
+SetEnv REGISTER_GLOBALS 0
+SetEnv ZEND_OPTIMIZER 1
+
+SetOutputFilter DEFLATE
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0678 no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+Header append Vary User-Agent env=!dont-vary
+
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^$ /index.php?page=index [L]
+RewriteRule ^index\.html$ /index.php?page=index [L]
+RewriteRule ^foodtruck\.html$ /index.php?page=foodtruck [L]
+RewriteRule ^contact\.html$ /index.php?page=contact [L]
+RewriteRule ^profil\.html$ /index.php?page=profil [L]
+RewriteRule ^thanks\.html$ /index.php?page=thanks [L]
+
+ErrorDocument 404 /noreferer/inex.htm

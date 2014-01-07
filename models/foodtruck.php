@@ -1,0 +1,2 @@
+<?php
+// foodtruck.php : model

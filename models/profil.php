@@ -1,0 +1,2 @@
+<?php
+// profil.php : model

@@ -1,0 +1,85 @@
+/*********************PAGE CONTACT***********************/
+/*********************PAGE CONTACT***********************/
+/*********************PAGE CONTACT***********************/
+
+#contact{
+	margin:0 auto;
+	width:800px;
+	background:#F0F2F5;
+	font-family:'Noto Sans';
+	padding-bottom: 15px;
+}
+
+
+#contact #titre-contact{
+	background:#FE434C;
+	
+
+}
+
+#contact span{
+	color:#fff;
+	text-transform:uppercase;
+	font-size:30px;
+	font-weight:bold;
+	margin-left:20px;
+	line-height:70px;
+}
+
+#contact input {
+	padding:0px;
+	margin:0 auto;
+	width:650px;
+	margin-left:20px;
+	margin-top:20px;
+	height:45px;
+	font-size:	18px;
+	color:#666;
+	padding-left:100px;
+	border:1px solid #aaa;
+	}	
+
+
+#contact textarea{
+	padding:0px;
+	margin:0 auto;
+	width:730px;
+	margin-left:20px;
+	margin-top:20px;
+	font-size:	20px;
+	color:#666;
+	padding-left:20px;
+	font-family:'Noto Sans';
+	padding-top:15px;
+	font-size:15px;
+	resize:none;
+}	
+
+
+#name-c{
+	background:white url('../img/rabbit.jpg') no-repeat left;
+}
+
+#subject-c{
+	background:white url('../img/snail.jpg') no-repeat left;
+}
+
+
+.btn-contact{
+float:right;
+font-size:25px;
+padding:5px 20px;
+margin-top:15px;
+margin-right:28px;
+text-decoration:none;
+text-transform:uppercase;
+color:#f0f2f5;
+background: #fe434c; /* Old browsers */
+}
+
+
+#footer_content a
+{
+	color: white;
+	text-decoration: none;
+}
