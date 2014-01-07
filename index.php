@@ -54,20 +54,21 @@ if ($GLOBAL_URL['short'] == 'index')
 	);
 
 	$ajout_js = array(
-		'profil.js',
-		'login_popup.js'
+		'login_popup.js',
+		'profil.js'
 	);
 	
 } elseif ($GLOBAL_URL['short'] == 'foodtruck')
 {
 	$ajout_css = array(
 		'page_truck.css',
-		'js/plugins/leaflet/leaflet.css'
+		'plugins/leaflet/leaflet.css'
 	);
 
 	$ajout_js = array(
-		'js/plugins/jquery-ui-1-10-3.js',
+		'plugins/jquery-ui-1-10-3.js',
 		'js_pft.js',
+		'plugins/rating.js',
 		'js_map_ft.js',
 		'login_popup.js',
 		'plugins/leaflet/leaflet.js'
@@ -83,6 +84,12 @@ if ($GLOBAL_URL['short'] == 'index')
 
 	$ajout_js = array(
 		'profil.js',
+		'login_popup.js'
+	);
+	
+} elseif ($GLOBAL_URL['short'] == 'contact')
+{
+	$ajout_js = array(
 		'login_popup.js'
 	);	
 }
