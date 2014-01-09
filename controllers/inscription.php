@@ -6,6 +6,7 @@ $inscription = new Inscription($db);
 $liste_champs = array(
 	'mail' => 'Vous devez indiquer une adresse mail.',
 	'password_confirm' => 'Vous devez confirmer votre mot de passe.',
+	'cgu' => "Vous devez accepter les conditions générales d'utilisation.",
 	'password' => 'Vous devez indiquer un mot de passe.'
 );
 

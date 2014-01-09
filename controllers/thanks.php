@@ -1,2 +1,0 @@
-<?php
-// thanks.php : controller

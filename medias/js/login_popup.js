@@ -24,6 +24,7 @@ $(document).ready(function()
 			data: {
 				ajax: true,
 				mail: $('#mail-connect').val(),
+				cgu: $('#cgu').is(':checked'),
 				password: $('#password-connect').val(),
 				password_confirm: $('#password-connect-confirmation').val()
 			},

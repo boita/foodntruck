@@ -4,6 +4,7 @@
 class Inscription extends init
 {
 	private $_mail;
+	private $_cgu;
 	private $_password;
 	private $_password_confirm;
 	
@@ -11,6 +12,7 @@ class Inscription extends init
 	{
 		parent::__construct($db);
 		$this->_mail = "";
+		$this->_cgu = "";
 		$this->_password = "";
 		$this->_password_confirm = "";
 	}
@@ -19,6 +21,11 @@ class Inscription extends init
 	public function setMail($mail)
 	{
 		$this->_mail = $mail;
+	}
+	
+	public function setCgu($cgu)
+	{
+		$this->_cgu = $cgu;
 	}
 	
 	public function setPassword($password)
@@ -35,6 +42,11 @@ class Inscription extends init
 	public function getMail()
 	{
 		return $this->_mail;
+	}
+	
+	public function getCgu()
+	{
+		return $this->_cgu;
 	}
 	
 	public function getPassword()
@@ -80,6 +92,14 @@ class Inscription extends init
 		if (!preg_match('#^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#', $this->_mail))
 		{
 			throw new Exception("Le format de l'adresse mail n'est pas valide.");
+		}
+	}
+	
+	public function isCguValide()
+	{
+		if ($this->_cgu == 'false' || $this->_cgu != 'true')
+		{
+			throw new Exception("Vous devez accepter les conditions générales d'utilisation.");
 		}
 	}
 	

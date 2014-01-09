@@ -9,7 +9,7 @@
 		<input id="password-connect-confirmation" type="password" name="password-connect-confirm" placeholder="yourpassword">
 		<p class="error" id="erreur_inscription"></p>
 		<div id="terms">
-			<input type="checkbox" name="terms" value="no"><span>I read and agree with the <a href="">terms and conditions of utilisation</a></span>
+			<input type="checkbox" name="cgu" id="cgu" value="no"><span>I read and agree with the <a href="">terms and conditions of utilisation</a></span>
 		</div>
 		<input type="submit" value="Register" id="register" class="btn-register">	
 		<div class="clear"></div>

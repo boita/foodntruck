@@ -16,12 +16,8 @@
 	<!--[if lte IE 8]>
 	<link rel="stylesheet" href="medias/js/plugins/leaflet/leaflet.ie.css" />
 	<![endif]-->
-	<script type="text/javascript" src="medias/js/global.js"></script>
 	<script type="text/javascript" src="medias/js/plugins/jquery_1-10-1.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-	<?php
-	foreach($ajout_js as $value) echo '<script type="text/javascript" src="medias/js/' . $value . '"></script>'."\n";
-	?>
 	<script>
 	$(function() {
 		$( ".datepicker" ).datepicker({

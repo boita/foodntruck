@@ -4,6 +4,11 @@
 	</div>
 </div>
 
+<script type="text/javascript" src="medias/js/global.js"></script>
+<?php
+foreach($ajout_js as $value) echo '<script type="text/javascript" src="medias/js/' . $value . '"></script>'."\n";
+?>
+	
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
