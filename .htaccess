@@ -22,6 +22,6 @@ RewriteRule ^index\.html$ /index.php?page=index [L]
 RewriteRule ^foodtruck\.html$ /index.php?page=foodtruck [L]
 RewriteRule ^contact\.html$ /index.php?page=contact [L]
 RewriteRule ^profil\.html$ /index.php?page=profil [L]
-RewriteRule ^thanks\.html$ /index.php?page=thanks [L]
+RewriteRule ^api/inscription\.php$ /index.php?page=inscription [L]
 
 ErrorDocument 404 /noreferer/inex.htm

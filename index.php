@@ -98,12 +98,12 @@ require_once 'models/' . $GLOBAL_URL['short'] . '.php';
 
 require_once 'controllers/' . $GLOBAL_URL['short'] . '.php';
 
-require_once dirname(__FILE__) . '/includes/header.php';
+if ($GLOBAL_URL['short'] !== 'inscription') require_once dirname(__FILE__) . '/includes/header.php';
 
-require_once dirname(__FILE__) . '/includes/menu.php';
+if ($GLOBAL_URL['short'] !== 'inscription') require_once dirname(__FILE__) . '/includes/menu.php';
 
 require_once 'views/' . $GLOBAL_URL['short'] . '.php';
 
-require_once dirname(__FILE__) . '/includes/footer.php';
+if ($GLOBAL_URL['short'] !== 'inscription') require_once dirname(__FILE__) . '/includes/footer.php';
 
 ob_end_flush();
