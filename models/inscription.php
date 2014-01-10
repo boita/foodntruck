@@ -65,7 +65,7 @@ class Inscription extends init
 		$nth = $this->_db->prepare("INSERT INTO foodtruck_utilisateurs (fu_mail, fu_password, fu_confirm_compte) VALUES (:mail, :mot_de_passe, :confirmation)");
 		
 		$nth->bindParam(':mail', $this->_mail, PDO::PARAM_STR);
-		$nth->bindParam(':mot_de_passe', sha1('R' . $this->_password), PDO::PARAM_STR);
+		$nth->bindParam(':mot_de_passe', sha1('~' . $this->_password), PDO::PARAM_STR);
 		$nth->bindValue(':confirmation', '0', PDO::PARAM_STR);
 		
 		if ($nth->execute())

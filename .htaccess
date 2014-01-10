@@ -23,5 +23,6 @@ RewriteRule ^foodtruck\.html$ /index.php?page=foodtruck [L]
 RewriteRule ^contact\.html$ /index.php?page=contact [L]
 RewriteRule ^profil\.html$ /index.php?page=profil [L]
 RewriteRule ^api/inscription\.php$ /index.php?page=inscription [L]
+RewriteRule ^api/connexion\.php$ /index.php?page=connexion [L]
 
 ErrorDocument 404 /noreferer/inex.htm

@@ -84,7 +84,7 @@
 		<a href="/"><img id="logo" src="http://foodntruck.com/medias/img/logo.png"></a>
 		<div id="bloc_co">
 			<img src="http://foodntruck.com/medias/img/user.png" />
-			<p>Johnny Doe</p>
+			<p><?php echo $cookie[1] ?></p>
 			<img src="http://foodntruck.com/medias/img/panier_rouge.png" />
 		</div>
 		<div class="clear"></div>

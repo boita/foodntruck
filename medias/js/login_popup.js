@@ -33,7 +33,32 @@ $(document).ready(function()
 			
 				if (data.inscription)
 				{
-					alert(data.inscription);
+					$.ajax({
+						type: 'POST',
+						dataType: 'json',
+						url: 'http://foodntruck.com/api/connexion.php',
+						data: {
+							ajax: true,
+							mail: $('#mail-connect').val(),
+							password: $('#password-connect').val(),
+						},
+						
+						success: function(data, textStatus, jqXHR) {
+
+							if (data.connexion)
+							{
+								window.location.href = window.location.href;
+							}
+							else
+							{
+								alert("Le mot de passe et/ou l'adresse mail sont incorrects (2).");
+							}
+						},
+
+						error: function(jqXHR, textStatus, errorThrown) {
+							alert("Problème de chargement.");
+						}
+					});
 				}
 				else
 				{
@@ -51,6 +76,38 @@ $(document).ready(function()
 			
 			error: function(jqXHR, textStatus, errorThrown) {
 				$('#erreur_inscription').html("Erreur lors de l'inscription.");
+			}
+		});
+		
+		return false;
+	});
+	
+	$('#log').submit(function()
+	{
+		$.ajax({
+			type: 'POST',
+			dataType: 'json',
+			url: 'http://foodntruck.com/api/connexion.php',
+			data: {
+				ajax: true,
+				mail: $('#login').val(),
+				password: $('#mdp').val()
+			},
+			
+			success: function(data, textStatus, jqXHR) {
+			
+				if (data.connexion)
+				{
+					alert("Vous êtes connecté.");
+				}
+				else
+				{
+					alert("Le mot de passe et/ou l'adresse mail sont incorrects (2).");
+				}
+			},
+			
+			error: function(jqXHR, textStatus, errorThrown) {
+				alert("Problème de chargement.");
 			}
 		});
 		
