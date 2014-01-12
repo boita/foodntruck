@@ -4,6 +4,8 @@
 
 <div id="bloc_map">
 	
+	<?php require_once(dirname(__FILE__) . '/../includes/register_form.php'); ?>
+	
 	<div id="container">
 		
 		<div id="contact">
