@@ -1,4 +1,4 @@
-<div id="header">
+<div id="header header_co">
 	<div id="content_header">
 		<div id="search">
 			<form id="keyword" action="thanks.php" method="POST">
@@ -83,9 +83,10 @@
 		</div>
 		<a href="/"><img id="logo" src="http://foodntruck.com/medias/img/logo.png"></a>
 		<div id="bloc_co">
-			<img src="http://foodntruck.com/medias/img/user.png" />
 			<p><?php echo $cookie[1] ?></p>
+			<img src="http://foodntruck.com/medias/img/user.png" />
 			<img src="http://foodntruck.com/medias/img/panier_rouge.png" />
+			<a id="logout" href="#">Log out</a>
 		</div>
 		<div class="clear"></div>
 	</div>

@@ -70,6 +70,11 @@ user-select: none;
 	z-index: 10;
 }
 
+#header_co
+{
+	padding: 5px 0px 10px 0px;
+}
+
 #content_header
 {
 	position: relative;
@@ -108,13 +113,13 @@ user-select: none;
 	padding-top: 4px;
 }
 
-#log_out
+#logout
 {	
-	float: right;
-	margin: 5px 5px 0px 0px;
 	color: #9C9C9C;
 	font-size: 0.8em;
 	text-decoration: none;
+	clear: both;
+	float: right;
 }
 
 #log

@@ -39,6 +39,8 @@ $(document).ready(function()
 				$(this).css('display','block');
 			}
 		});
+		$("#categ ul li").removeClass('menu-active');
+		$(this).addClass('menu-active'); 
 	});
 	
 	$('.c-all').click(function()
@@ -46,6 +48,7 @@ $(document).ready(function()
 		$('.item').css('display','block');
 	});
 });
+	
 	
 $(window).resize(function() 
 {
