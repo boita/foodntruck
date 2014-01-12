@@ -10,9 +10,9 @@
 	
 		<div id="breadcrumb">
 			<img src="img/camion.png" />
-			<span>Accueil</span>
-			<span>-></span>
-			<span>Le camion qui fume</span>
+			<span class="page_possible">Accueil</span>
+			<span class="page_possible">-></span>
+			<span class="page_actuelle">Le camion qui fume</span>
 		</div>
 		
 		<div id="photo_adress">

@@ -374,6 +374,25 @@ user-select: none;
 	-o-border-radius: 7px;
 }
 
+/****************Breadcrumb*************/
+
+#breadcrumb
+{
+	margin-bottom: 5px;
+}
+
+.page_possible
+{
+	color: #6ACEEB;
+	font-size: 0.8em;
+}
+
+.page_actuelle
+{
+	color: #E32D36;
+	font-size: 0.8em;
+}
+
 /****************Footer****************/
 
 #footer
