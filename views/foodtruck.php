@@ -8,6 +8,13 @@
 
 	<div id="container">
 	
+		<div id="breadcrumb">
+			<img src="img/camion.png" />
+			<span>Accueil</span>
+			<span>-></span>
+			<span>Le camion qui fume</span>
+		</div>
+	
 		<div id="photo_adress">
 			<div id="photo_truck">
 				<div id="titre_truck">
