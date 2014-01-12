@@ -51,7 +51,7 @@
 				</div>
 			</div>
 			<div id="pres">
-				<p class="descr_truck">FoodnTruck's authentic Philly Cheesesteaks start with thinly sliced sirloin steak grilled to perfection. We stay true to our cheesesteaks and offer the original "cheese whiz" or your choice of provolone or white american cheese with or without grilled onions. To top it off we use only the freshest hoagie roll that is fit to handle an authentic cheesesteak. 
+				<p class="descr_truck">FoodnTruck's authentic philly cheesesteaks start with thinly sliced sirloin steak grilled to perfection. We stay true to our cheesesteaks and offer the original "cheese whiz" or your choice of provolone or white american cheese with or without grilled onions. To top it off we use only the freshest hoagie roll that is fit to handle an authentic cheesesteak. 
 				</p>
 				<div id="types_truck">
 					<img src="medias/img/pop_up/frite.png" alt="Fries" />
