@@ -1,4 +1,4 @@
-<div id="header header_co">
+<div id="header" class="header_co">
 	<div id="content_header">
 		<div id="search">
 			<form id="keyword" action="thanks.php" method="POST">
