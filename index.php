@@ -23,6 +23,21 @@ class init
 	}
 }
 
+if (isset($_COOKIE['kayak']))
+{
+	preg_match('#(.+)\$([0-9]{10})\$([a-z0-9]{40})$#U', $_COOKIE['kayak'], $cookie);
+	
+	if (sha1('^~@;<!+,&(&):];^(+[?[*#]/:/_[!^;' . $cookie[1] . $cookie[2]) != $cookie[3])
+	{
+		$cookie['expire'] = time()-3600;
+		$cookie['path'] = '/';
+		$cookie['domain'] = 'foodntruck.com';
+		$cookie['contenu'] = NULL;
+		
+		setrawcookie('kayak', $cookie['contenu'], $cookie['expire'], $cookie['path'], $cookie['domain']);
+	}
+}
+
 if (isset($_GET['page']))
 	$GLOBAL_URL['short'] = $_GET['page'];
 else
@@ -98,12 +113,12 @@ require_once 'models/' . $GLOBAL_URL['short'] . '.php';
 
 require_once 'controllers/' . $GLOBAL_URL['short'] . '.php';
 
-require_once dirname(__FILE__) . '/includes/header.php';
+if ($GLOBAL_URL['short'] !== 'inscription' && $GLOBAL_URL['short'] !== 'connexion') require_once dirname(__FILE__) . '/includes/header.php';
 
-require_once dirname(__FILE__) . '/includes/menu.php';
+if ($GLOBAL_URL['short'] !== 'inscription' && $GLOBAL_URL['short'] !== 'connexion') require_once dirname(__FILE__) . '/includes/menu' . (isset($_COOKIE['kayak']) && !empty($_COOKIE['kayak']) ? '_co' : '') . '.php';
 
 require_once 'views/' . $GLOBAL_URL['short'] . '.php';
 
-require_once dirname(__FILE__) . '/includes/footer.php';
+if ($GLOBAL_URL['short'] !== 'inscription' && $GLOBAL_URL['short'] !== 'connexion') require_once dirname(__FILE__) . '/includes/footer.php';
 
 ob_end_flush();

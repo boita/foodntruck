@@ -39,7 +39,7 @@ cursor:pointer;
 	line-height:60px;
 }
 
-#register-container #mail-connect, #register-container #password-connect, #register-container #password2-connect {
+#register-container #mail-connect, #register-container #password-connect, #register-container #password-connect-confirmation, #register-container #password2-connect {
 	padding:0px;
 	margin:0 auto;
 	width:475px;
@@ -75,7 +75,7 @@ cursor:pointer;
 	background:white url('../img/popup_register/user.jpg') no-repeat left;
 }
 
-#password-connect{
+#password-connect, #password-connect-confirmation{
 	background:white url('../img/popup_register/key.jpg') no-repeat left;
 }
 
