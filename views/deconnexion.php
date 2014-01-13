@@ -1,0 +1,2 @@
+<?php
+// deconnexion.php : view

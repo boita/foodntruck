@@ -6,23 +6,7 @@ $(document).ready(function()
 	positionAddAddresse();
 	countTastes();
 	//positionTastes();
-	
-	/*$("#gouts li img").mouseover(function()
-	{
-		if($(this).parent('li').attr('id') != "add_gout")
-		{
-			$(this).attr('src','img/profil/croix.png');
-		}
-	});
-	
-	$("#gouts li img").mouseleave(function()
-	{
-		if($(this).parent('li').attr('id') != "add_gout")
-		{
-			$(this).attr('src','img/profil/check.png');
-		}
-	});*/
-	
+
 	$("#add_new_address").click(function()
 	{
 		$("#bloc_add_address").slideDown("fast");
@@ -76,12 +60,6 @@ $(document).ready(function()
 		countAddresse();
 		positionAddAddresse();
 	});
-	
-	/*$(".suppr_tast").click(function()
-	{
-		var elmt = $(this).parent('li');
-		deleteTastes(elmt);
-	});*/
 	
 	$("#close_pop_taste").click(function()
 	{

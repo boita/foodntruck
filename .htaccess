@@ -24,5 +24,7 @@ RewriteRule ^contact\.html$ /index.php?page=contact [L]
 RewriteRule ^profil\.html$ /index.php?page=profil [L]
 RewriteRule ^api/inscription\.php$ /index.php?page=inscription [L]
 RewriteRule ^api/connexion\.php$ /index.php?page=connexion [L]
+RewriteRule ^api/recherche\.php$ /index.php?page=recherche [L]
+RewriteRule ^deconnexion-(.*)\.html$ /index.php?page=deconnexion&url=$1 [L]
 
 ErrorDocument 404 /noreferer/inex.htm

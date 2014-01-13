@@ -9,7 +9,7 @@
 				</div>
 				<div id="search_field">
 					<input type="text" id="inp_search" class="items" placeholder="Find a Foodtruck...">
-					<input type="image" src="http://foodntruck.com/medias/img/search/loupe.png" id="loupe">
+					<input type="image" src="medias/img/search/loupe.png" id="loupe">
 				</div>
 				<div class="clear"></div>
 			</form>
@@ -81,12 +81,12 @@
 				</div>
 			</form>
 		</div>
-		<a href="/"><img id="logo" src="http://foodntruck.com/medias/img/logo.png"></a>
+		<a href="/"><img id="logo" src="medias/img/logo.png"></a>
 		<div id="bloc_co">
 			<p><?php echo $cookie[1] ?></p>
-			<img src="http://foodntruck.com/medias/img/user.png" />
-			<img src="http://foodntruck.com/medias/img/panier_rouge.png" />
-			<a id="logout" href="#">Log out</a>
+			<img src="medias/img/user.png" />
+			<img src="medias/img/panier_rouge.png" />
+			<a id="logout" href="deconnexion-<?php echo $_SERVER['REQUEST_URI'] ?>.html">Log out</a>
 		</div>
 		<div class="clear"></div>
 	</div>

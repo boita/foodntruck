@@ -51,7 +51,7 @@ $(document).ready(function()
 							}
 							else
 							{
-								alert("Le mot de passe et/ou l'adresse mail sont incorrects (2).");
+								alert("Le mot de passe et/ou l'adresse mail sont incorrects.");
 							}
 						},
 
@@ -98,11 +98,11 @@ $(document).ready(function()
 			
 				if (data.connexion)
 				{
-					alert("Vous êtes connecté.");
+					window.location.href = window.location.href;
 				}
 				else
 				{
-					alert("Le mot de passe et/ou l'adresse mail sont incorrects (2).");
+					alert("Le mot de passe et/ou l'adresse mail sont incorrects.");
 				}
 			},
 			

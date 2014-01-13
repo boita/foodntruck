@@ -190,18 +190,6 @@ function changeQuantity(clicked)
 		
 		$('.'+which).children('.bloc_panier_left').children('.price_prod').text(total_price+',00€');
 	}
-	
-	/*var which = clicked.parent('.elmt_panier').attr('class').split(' ')[0];
-	var actualqtt = $('.'+which).children('.quantity').text();
-	var totalprice = $('.'+which).children('.price_prod').text();
-	totalprice = totalprice.replace(',','.');
-	var unitprice = parseInt(totalprice) / parseInt(actualqtt);
-	
-	var newqtt = parseInt(actualqtt) + 1;
-	$('.'+which).children('.quantity').text(newqtt);
-	newprice = parseInt(totalprice) + parseInt(unitprice);
-	newprice = newprice;
-	$('.'+which).children('.price_prod').text(newprice);*/
 }
 
 function calculateTotal()
@@ -217,24 +205,3 @@ function calculateTotal()
 	$("#total_price").text(globalprice+(',00€'));
 }
 	
-/*function removeProdFromCart(clicked)
-{
-	var which = clicked.parent('.elmt_panier').attr('class').split(' ')[0];
-	var actualqtt = $('.'+which).children('.quantity').text();
-	var totalprice = $('.'+which).children('.price_prod').text();
-	totalprice = totalprice.replace(',','.');
-	var unitprice = parseInt(totalprice) / parseInt(actualqtt);
-	
-	var newqtt = actualqtt - 1;
-	if(newqtt < 1)
-	{
-		$('#panier .'+which).remove();
-	}
-	else
-	{
-		$('.'+which).children('.quantity').text(newqtt);
-		newprice = parseInt(totalprice) - parseInt(unitprice);
-		newprice = newprice;
-		$('.'+which).children('.price_prod').text(newprice);
-	}
-}*/

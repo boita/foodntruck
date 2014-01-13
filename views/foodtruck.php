@@ -9,7 +9,7 @@
 	<div id="container">
 	
 		<div id="breadcrumb">
-			<img src="img/camion.png" />
+			<img src="medias/img/camion.png" />
 			<span class="page_possible">Accueil</span>
 			<span class="page_possible">-></span>
 			<span class="page_actuelle">Le camion qui fume</span>
@@ -21,7 +21,7 @@
 					<h2>Le camion qui fume</h2>
 				</div>
 				<div id="visu_truck">
-					<img src="img/page_ft/camion.jpg" alt="Le camion qui fume"/>
+					<img src="medias/img/page_ft/camion.jpg" alt="Le camion qui fume"/>
 				</div>
 			</div>
 			<div id="map_truck">
@@ -37,12 +37,12 @@
 		<div id="pres_truck">
 			<div id="add_favorit">
 				<p>Add to favourite</p>
-				<img src="img/pop_up/coeur_blanc.png" alt="Ajoutez aux favoris"/>
+				<img src="medias/img/pop_up/coeur_blanc.png" alt="Ajoutez aux favoris"/>
 			</div>
 			
 			<div id="panier">
 				<div id="head_panier">
-					<p id="descr_panier"><img src="img/panier.png" /><span id="nb_item"></span></p>
+					<p id="descr_panier"><img src="medias/img/panier.png" /><span id="nb_item"></span></p>
 					<div id="bloc_content_panier">
 						<div id="content_panier">
 						</div>
@@ -59,9 +59,9 @@
 				<p class="descr_truck">FoodnTruck's authentic Philly Cheesesteaks start with thinly sliced sirloin steak grilled to perfection. We stay true to our cheesesteaks and offer the original "cheese whiz" or your choice of provolone or white american cheese with or without grilled onions. To top it off we use only the freshest hoagie roll that is fit to handle an authentic cheesesteak. 
 				</p>
 				<div id="types_truck">
-					<img src="img/pop_up/frite.png" alt="Fries" />
-					<img src="img/pop_up/burger.png" alt="Burgers" />
-					<img src="img/pop_up/salade.png" alt="Salads" />
+					<img src="medias/img/pop_up/frite.png" alt="Fries" />
+					<img src="medias/img/pop_up/burger.png" alt="Burgers" />
+					<img src="medias/img/pop_up/salade.png" alt="Salads" />
 				</div>
 				<div class="clear"></div>
 				<div id="notation">
@@ -98,10 +98,10 @@
 			<div id="categ">
 				<ul>
 					<li class="c-all menu-active"><img src="" /><span>Everything</span></li>
-					<li class="c-burger"><img src="img/pop_up/m-burger.png" /><span>Burgers</span></li>
-					<li class="c-salad"><img src="img/pop_up/m-salad.png" /><span>Salads</span></li>
-					<li class="c-drink"><img src="img/pop_up/m-drink.png" /><span>Drinks</span></li>
-					<li class="c-dessert"><img src="img/pop_up/m-cake.png" /><span>Desserts</span></li>
+					<li class="c-burger"><img src="medias/img/pop_up/m-burger.png" /><span>Burgers</span></li>
+					<li class="c-salad"><img src="medias/img/pop_up/m-salad.png" /><span>Salads</span></li>
+					<li class="c-drink"><img src="medias/img/pop_up/m-drink.png" /><span>Drinks</span></li>
+					<li class="c-dessert"><img src="medias/img/pop_up/m-cake.png" /><span>Desserts</span></li>
 				</ul>
 			</div>
 			
@@ -109,7 +109,7 @@
 			
 				<div class="item iburger item1 active_item">
 					<div class="containdesc">
-						<img src="img/page_ft/burger.jpg"/>	
+						<img src="medias/img/page_ft/burger.jpg"/>	
 						<h4>Double fire burger of doom</h4>
 						<p>Description of the meal and the ingredients<br/>
 						Ingredients: Panda steaks, from Ukrain (Tchernobyl), industrial bread
@@ -121,7 +121,7 @@
 				
 				<div class="item iburger item2 active_item">
 				<div class="containdesc">
-					<img src="img/page_ft/burger2.jpg"/>
+					<img src="medias/img/page_ft/burger2.jpg"/>
 					<h4>Burger with vegetables</h4>
 					<p>Description of the meal and the ingredients<br/>
 					Ingredients: Oignons, salad, dog meat and rainbows.
@@ -133,7 +133,7 @@
 				
 				<div class="item ifries item3 active_item">
 				<div class="containdesc">
-					<img src="img/page_ft/fries.jpg"/>
+					<img src="medias/img/page_ft/fries.jpg"/>
 					<h4>Epic fries of darkness</h4>
 					<p>Description of the meal and the ingredients<br/>
 					Ingredients: Potatoes from MacDonald.
@@ -146,7 +146,7 @@
 				
 				<div class="item idessert item4 active_item">
 				<div class="containdesc">
-					<img src="img/page_ft/crepe.jpg"/>
+					<img src="medias/img/page_ft/crepe.jpg"/>
 					<h4>RIP dead crepe in heaven</h4>
 					<p>Description of the meal and the ingredients<br/>
 					Ingredients: Chocolate crepe, with a cherry on 'the not cake' top.
@@ -158,7 +158,7 @@
 				
 				<div class="item isalad item5 active_item">
 				<div class="containdesc">
-					<img src="img/page_ft/colesaw.jpg"/>
+					<img src="medias/img/page_ft/colesaw.jpg"/>
 					<h4>Last Coleslaw on earth</h4>
 					<p>Description of the meal and the ingredients<br/>
 					
@@ -170,7 +170,7 @@
 				
 				<div class="item isalad item6 active_item">
 				<div class="containdesc">
-					<img src="img/page_ft/salade.jpg"/>
+					<img src="medias/img/page_ft/salade.jpg"/>
 					<h4>Stop raconter des salades</h4>
 					<p>Description of the meal and the ingredients<br/>
 					Snail salad
@@ -182,7 +182,7 @@
 				
 				<div class="item idessert item7 active_item">
 				<div class="containdesc">
-					<img src="img/page_ft/cheesecake.jpg"/>
+					<img src="medias/img/page_ft/cheesecake.jpg"/>
 					<h4>Best Cheese cake EUW</h4>
 					<p>Description of the meal and the ingredients<br/>
 					Awarded best cheese cake EUW by the League of Legends community.
@@ -194,7 +194,7 @@
 				
 				<div class="item idrink item8 active_item">
 				<div class="containdesc">
-					<img src="img/page_ft/coca.jpg"/>
+					<img src="medias/img/page_ft/coca.jpg"/>
 					<h4>Calo Caco from Pipse(diabet in can)</h4>
 					<p>Description of the meal and the ingredients<br/>
 					Enjoy your cancer with this delicious can of sugar.
